@@ -1,5 +1,6 @@
 package com.example.blooddonation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -128,8 +129,9 @@ public class MainActivity2 extends AppCompatActivity {
                             // Sign in success
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(MainActivity2.this, "Registration Successful", Toast.LENGTH_SHORT).show();
-
-                            // Here you can save additional user information in Firebase Firestore or Realtime Database
+                            Intent intent = new Intent(MainActivity2.this, MainActivity4.class);
+                            startActivity(intent);
+                            finish();
 
                         } else {
                             // If sign in fails, display a message to the user.

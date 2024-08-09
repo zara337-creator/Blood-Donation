@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity3 extends AppCompatActivity {
+public class   MainActivity3 extends AppCompatActivity {
 
     private EditText editTextPhoneNumber;
     private Button buttonSubmit;
